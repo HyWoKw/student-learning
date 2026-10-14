@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>학생 학습 포털</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f4f6fa;
+      color: #243047;
+    }
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 16px;
+    }
+    button {
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 8px;
+      background: #3157c8;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>학생 학습 포털</h1>
+    <p>배우고, 기록하고, 함께 성장하는 공간입니다.</p>
+    <h2>오늘의 학습</h2>
+    <p id="message">버튼을 눌러 학습을 시작하세요.</p>
+    <button onclick="startLearning()">학습 시작</button>
+  </main>
+
+  <script>
+    function startLearning() {
+      document.getElementById("message").textContent =
+        "오늘의 학습을 시작합니다!";
+    }
+  </script>
+</body>
+</html>
